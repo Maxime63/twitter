@@ -6,6 +6,7 @@
 package Model;
 
 import java.io.Serializable;
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.JoinColumn;
@@ -17,7 +18,7 @@ import javax.persistence.ManyToOne;
  */
 @Entity
 public class Hashtag extends Text implements Serializable{
-    @JoinColumn (name = "Trend")
-    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn (name = "trendId")
+    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private Trend trend;
 }

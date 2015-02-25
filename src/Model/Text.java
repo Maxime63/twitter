@@ -6,7 +6,7 @@
 package Model;
 
 import java.io.Serializable;
-import javax.persistence.Column;
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -27,7 +27,7 @@ public class Text implements Serializable{
     
     private String text;
     
-    @JoinColumn (name = "Content")
-    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn (name = "contentId")
+    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private Content content;
 }

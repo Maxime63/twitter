@@ -32,14 +32,14 @@ public class Tweet implements Serializable{
  
     private Date tweetDate;
     
-    @JoinColumn (name = "Twitter")
+    @JoinColumn (name = "profilId")
     @ManyToOne (fetch = FetchType.LAZY)
     private Profil twitter;
     
-    @ManyToMany (fetch = FetchType.LAZY, mappedBy = "mRetweets")
+    @ManyToMany (fetch = FetchType.LAZY, mappedBy = "retweets")
     private List<Profil> retweetProfil;
     
     @OneToOne (fetch = FetchType.LAZY)
-    @JoinColumn (name = "ContentId")
+    @JoinColumn (name = "contentId")
     private Content content;
 }

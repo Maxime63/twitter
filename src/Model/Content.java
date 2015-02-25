@@ -8,7 +8,6 @@ package Model;
 import java.io.Serializable;
 import java.util.List;
 import javax.persistence.CascadeType;
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -27,9 +26,9 @@ public class Content implements Serializable{
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     private long contentId;
     
-    @OneToOne (fetch = FetchType.LAZY, mappedBy = "content")
+    @OneToOne (fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "content")
     private Tweet tweet;
     
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "content")
+    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "content")
     private List<Text> texts;
 }

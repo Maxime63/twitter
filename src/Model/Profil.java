@@ -31,21 +31,21 @@ public class Profil implements Serializable{
     
     private String name;
     
-    @JoinColumn (name = "User")
-    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn (name = "personId")
+    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private Person user;
     
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "profilId")
+    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private List<Profil> followers;
     
-    @OneToMany (cascade = CascadeType.ALL, mappedBy = "profilId")
+    @OneToMany (fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private List<Profil> following;
     
-    @OneToMany (cascade = CascadeType.ALL, mappedBy = "twitter")
+    @OneToMany (fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "twitter")
     private List<Tweet> tweets;
     
     @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinTable (name = "Tweet_category", joinColumns = {
+    @JoinTable (name = "retweet_profil", joinColumns = {
         @JoinColumn(name = "profilId", nullable = false) },
         inverseJoinColumns = { @JoinColumn(name = "tweetId", nullable = false)
     })

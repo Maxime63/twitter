@@ -9,6 +9,7 @@ import java.io.Serializable;
 import java.util.List;
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -26,6 +27,6 @@ public class Trend implements Serializable{
     
     private String localisation;
     
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "trend")
+    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "trend")
     private List<Hashtag> hastags;
 }
