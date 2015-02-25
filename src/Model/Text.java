@@ -30,4 +30,16 @@ public class Text implements Serializable{
     @JoinColumn (name = "contentId")
     @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private Content content;
+
+    public void setTextId(long textId) {
+        this.textId = textId;
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
+
+    public void setContent(Content content) {
+        this.content = content;
+    } 
 }

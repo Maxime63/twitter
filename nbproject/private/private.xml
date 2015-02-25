@@ -3,16 +3,17 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Maxime/Google%20Drive/ISIMA/ZZ3/Java%20Avancé/Twitter/Twitter/src/Model/Trend.java</file>
-            <file>file:/C:/Users/Maxime/Google%20Drive/ISIMA/ZZ3/Java%20Avancé/Twitter/Twitter/src/Model/Person.java</file>
-            <file>file:/C:/Users/Maxime/Google%20Drive/ISIMA/ZZ3/Java%20Avancé/Twitter/Twitter/src/Model/Content.java</file>
-            <file>file:/C:/Users/Maxime/Google%20Drive/ISIMA/ZZ3/Java%20Avancé/Twitter/Twitter/src/Model/Text.java</file>
-            <file>file:/C:/Users/Maxime/Google%20Drive/ISIMA/ZZ3/Java%20Avancé/Twitter/Twitter/src/Model/Hashtag.java</file>
-            <file>file:/C:/Users/Maxime/Google%20Drive/ISIMA/ZZ3/Java%20Avancé/Twitter/Twitter/src/Model/Video.java</file>
-            <file>file:/C:/Users/Maxime/Google%20Drive/ISIMA/ZZ3/Java%20Avancé/Twitter/Twitter/src/Model/Link.java</file>
-            <file>file:/C:/Users/Maxime/Google%20Drive/ISIMA/ZZ3/Java%20Avancé/Twitter/Twitter/src/Model/Tweet.java</file>
-            <file>file:/C:/Users/Maxime/Google%20Drive/ISIMA/ZZ3/Java%20Avancé/Twitter/Twitter/src/Model/Picture.java</file>
-            <file>file:/C:/Users/Maxime/Google%20Drive/ISIMA/ZZ3/Java%20Avancé/Twitter/Twitter/src/Model/Profil.java</file>
+            <file>file:/D:/ISIMA/ZZ3/twitter/src/Model/Hashtag.java</file>
+            <file>file:/D:/ISIMA/ZZ3/twitter/src/Test/TwitterTest.java</file>
+            <file>file:/D:/ISIMA/ZZ3/twitter/src/Model/Tweet.java</file>
+            <file>file:/D:/ISIMA/ZZ3/twitter/src/Model/Trend.java</file>
+            <file>file:/D:/ISIMA/ZZ3/twitter/src/Model/Content.java</file>
+            <file>file:/D:/ISIMA/ZZ3/twitter/src/Model/Link.java</file>
+            <file>file:/D:/ISIMA/ZZ3/twitter/src/Model/Picture.java</file>
+            <file>file:/D:/ISIMA/ZZ3/twitter/src/META-INF/persistence.xml</file>
+            <file>file:/D:/ISIMA/ZZ3/twitter/src/Model/Profil.java</file>
+            <file>file:/D:/ISIMA/ZZ3/twitter/src/Model/Text.java</file>
+            <file>file:/D:/ISIMA/ZZ3/twitter/src/Model/Video.java</file>
         </group>
     </open-files>
 </project-private>

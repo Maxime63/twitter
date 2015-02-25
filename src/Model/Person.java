@@ -6,6 +6,7 @@
 package Model;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
@@ -34,6 +35,10 @@ public class Person implements Serializable{
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "user")
     private List<Profil> profils;
 
+    public Person(){
+        profils = new ArrayList<>();
+    }
+    
     public void setName(String name) {
         this.name = name;
     }
@@ -45,6 +50,12 @@ public class Person implements Serializable{
     public void setPassword(String password) {
         this.password = password;
     }
-    
-    
+
+    public void setIdPerson(long idPerson) {
+        this.idPerson = idPerson;
+    }
+
+    public void setProfils(List<Profil> profils) {
+        this.profils = profils;
+    }
 }

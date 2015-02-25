@@ -29,4 +29,16 @@ public class Trend implements Serializable{
     
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "trend")
     private List<Hashtag> hastags;
+
+    public void setTrendId(long trendId) {
+        this.trendId = trendId;
+    }
+
+    public void setLocalisation(String localisation) {
+        this.localisation = localisation;
+    }
+
+    public void setHastags(List<Hashtag> hastags) {
+        this.hastags = hastags;
+    }
 }

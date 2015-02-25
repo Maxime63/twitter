@@ -24,7 +24,6 @@ import javax.persistence.Table;
  * @author Maxime
  */
 @Entity
-@Table (name = "Tweets")
 public class Tweet implements Serializable{
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
@@ -42,4 +41,26 @@ public class Tweet implements Serializable{
     @OneToOne (fetch = FetchType.LAZY)
     @JoinColumn (name = "contentId")
     private Content content;
+
+    public void setTweetId(long tweetId) {
+        this.tweetId = tweetId;
+    }
+
+    public void setTweetDate(Date tweetDate) {
+        this.tweetDate = tweetDate;
+    }
+
+    public void setTwitter(Profil twitter) {
+        this.twitter = twitter;
+    }
+
+    public void setRetweetProfil(List<Profil> retweetProfil) {
+        this.retweetProfil = retweetProfil;
+    }
+
+    public void setContent(Content content) {
+        this.content = content;
+    }
+    
+    
 }

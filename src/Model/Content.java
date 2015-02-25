@@ -31,4 +31,16 @@ public class Content implements Serializable{
     
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "content")
     private List<Text> texts;
+
+    public void setContentId(long contentId) {
+        this.contentId = contentId;
+    }
+
+    public void setTweet(Tweet tweet) {
+        this.tweet = tweet;
+    }
+
+    public void setTexts(List<Text> texts) {
+        this.texts = texts;
+    }
 }

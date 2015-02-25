@@ -21,4 +21,8 @@ public class Hashtag extends Text implements Serializable{
     @JoinColumn (name = "trendId")
     @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private Trend trend;
+
+    public void setTrend(Trend trend) {
+        this.trend = trend;
+    }
 }
